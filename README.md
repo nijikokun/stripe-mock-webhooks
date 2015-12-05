@@ -8,6 +8,7 @@ Quickly test Stripe Webhooks against your application without hitting Stripe or 
 - Generate Webhook response object without triggering it against your application
 - Offline mocking
 - [Supports multiple versions of the Stripe API](https://github.com/Nijikokun/stripe-mock-data#features--data)
+- Promises!
 
 ## Install
 
