@@ -38,7 +38,13 @@ webhooks.trigger('invoice_created').then(function (response) {
 })
 ```
 
-Overwrite values in the response:
+You can also use dot notation:
+
+```js
+webhooks.trigger('invoice.created')
+```
+
+Or overwrite values in the response:
 
 ```js
 webhooks.trigger('invoice_created', {
@@ -80,11 +86,9 @@ Supports the same arguments as `webhooks.trigger`
 
 - `now` - Updates event `created` timestamp to `Date.now()`, defaults to `true`
 
-## Todo
+## Examples
 
-- Split webhook data into seperate files for API usage
-- Clean up older webhook objects of invalid identifiers
-- Write tests for main entry file
+Look in [tests](tests/) to see example usage.
 
 ## License
 
