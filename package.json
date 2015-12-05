@@ -1,0 +1,30 @@
+{
+  "name": "stripe-mock-webhooks",
+  "version": "1.0.0",
+  "description": "Test Stripe Webhooks, no internet required",
+  "repository": "Nijikokun/stripe-mock-webhooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stripe",
+    "test",
+    "mock",
+    "data",
+    "api",
+    "server",
+    "webhook",
+    "json",
+    "offline",
+    "tester"
+  ],
+  "author": "Nijiko Yonskai <nijikokun@gmail.com> (nijikokun.com)",
+  "license": "MIT",
+  "dependencies": {
+    "assign-deep": "^0.4.2",
+    "needle": "^0.11.0",
+    "promise": "^7.0.4",
+    "stripe-mock-data": "^1.0.0"
+  }
+}
