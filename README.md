@@ -32,23 +32,17 @@ var webhooks = new StripeMockWebhooks({
 Send a webhook:
 
 ```js
-webhooks.trigger('invoice_created').then(function (response) {
+webhooks.trigger('invoice.created').then(function (response) {
   // success
 }).catch(function (err) {
   // error
 })
 ```
 
-You can also use dot notation:
-
-```js
-webhooks.trigger('invoice.created')
-```
-
 Or overwrite values in the response:
 
 ```js
-webhooks.trigger('invoice_created', {
+webhooks.trigger('invoice.created', {
   data: {
     object: {
       plan: {
@@ -62,7 +56,7 @@ webhooks.trigger('invoice_created', {
 Additional options can be turned on / off:
 
 ```js
-webhooks.trigger('invoice_created', undefined, {
+webhooks.trigger('invoice.created', undefined, {
   now: false
 })
 ```
@@ -70,7 +64,7 @@ webhooks.trigger('invoice_created', undefined, {
 Build `JSON` response without triggering an event:
 
 ```js
-var response = webhooks.build('invoice_created', {
+var response = webhooks.build('invoice.created', {
   data: {
     object: {
       plan: {

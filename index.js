@@ -39,7 +39,6 @@ exports.LATEST_STRIPE_VERSION = '2015-10-01'
  * @param  {Boolean} options.now Change event created timestamp to now, defaults to true
  */
 exports.prototype.build = function stripeEvent (event, properties, options) {
-  event = event.replace('_', '.')
   properties = properties || {}
   options = options || {
     now: true
