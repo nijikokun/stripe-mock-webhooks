@@ -1,6 +1,6 @@
 {
   "name": "stripe-mock-webhooks",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Test Stripe Webhooks, no internet required",
   "repository": "Nijikokun/stripe-mock-webhooks",
   "main": "index.js",
